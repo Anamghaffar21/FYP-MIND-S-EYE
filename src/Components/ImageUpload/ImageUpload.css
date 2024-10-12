@@ -1,0 +1,32 @@
+.image-upload {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .image-upload button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #e74c3c; /* Red color as shown in the image */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  .image-upload button:hover {
+    background-color: #c0392b; /* Darker shade of red for hover state */
+  }
+  
+  .image-upload button:active {
+    transform: scale(0.98); /* Slight scale down when clicked */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .image-upload button {
+      width: 100%;
+      max-width: 300px; /* Limit width on very wide screens */
+    }
+  }
